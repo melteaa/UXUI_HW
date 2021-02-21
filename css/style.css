@@ -1,0 +1,419 @@
+body{
+    background-color: #FFFDF0; /*makes the entire page cream colored*/
+}
+
+
+.nav_div0 {
+
+    display: flex;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-top: 25px;
+    align-items: center;
+}
+.nav_div{
+    /*takes care of the nav items only*/
+    width: 90%;    /*acts like a margin so items aren't butted to the right*/
+    display: flex;/*positions things*/
+    flex-direction: row;
+    justify-content: flex-end;/*sets the navigations to the right*/
+
+}
+.nav_item {
+    font-family: 'Alegreya Sans', sans-serif;/*type of font*/
+    font-size: 14px;/*size of font*/
+    display: inline-block;/*sets the items in a line rather than a stack*/
+
+    margin-left: 15px;/*puts space between the items */
+    margin-right: 15px;/*puts space between the items */
+    color: #024890; /*color of the words*/
+}
+
+.nav_item:hover{
+  text-decoration: underline;
+  text-decoration-color: #024890;
+  font-weight: bold;
+}
+.nav_item_big {
+    font-family: 'Alegreya Sans', sans-serif;/*type of font*/
+    font-size: 14px;/*size of font*/
+    font-weight: bold;
+    display: inline-block;/*sets the items in a line rather than a stack*/
+    margin-left: 20px;/*puts space between the items */
+    text-decoration: underline;
+    text-decoration-color: #DD5334;/*this entire section should have an underline running under the whole nav bar*/
+    color:#DD5334; /*color of the words*/
+}
+
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 36px;
+    font:bold;
+    line-height: 40px;
+    color:#FFFDF0; 
+    margin-bottom: 10px;
+}
+
+.subheader{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 24px;
+    font:bold;
+    color:#FFFDF0; 
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFDF0; 
+
+}
+
+.spacefiller{
+    height: 200px;
+}
+.spacefiller2{
+    height: 150px;
+    
+}
+
+.spacefiller_small{
+    height: 25px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 50px auto 50px auto;
+}
+
+.fan_intro{
+    background-image: url("../img/fan.png");
+    width: 1000px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.fan_positioning{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.overlay{
+    border-radius: 10px;
+    /* padding: 20px; */
+    background: rgba(129, 163, 192, 0.75);
+    background-size: cover;
+    height: 484px;
+
+
+}
+
+.overlay_slideshow{
+  border-radius: 10px;
+  /* padding: 20px; */
+  background: rgba(129, 163, 192, 0.75);
+  background-size: cover;
+  height: 450px;
+
+
+}
+
+.overlay_sneak{
+  border-radius: 10px;
+  /* padding: 20px; */
+  background: rgba(129, 163, 192, 0.75);
+  background-size: cover;
+  height: 350px;
+
+
+}
+
+.box_top{
+  height: 484px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    background-color:#80A3C0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position-x: 300px;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position:relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: #FFFDF0;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(242,148,121,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FFFDF0;
+
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #F29479;
+}
+
+.arrows{
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.Slide1{
+    background-image: url("../img/dnd_sheet_BW.png");
+    background-color:#80A3C0;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.Slide2{
+  background-image: url("../img/ferst_readers_BW.png");
+  background-color:#80A3C0;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+.Slide3{
+  background-image: url("../img/illustration_BW.png");
+  background-color:#80A3C0;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+
+.featured_work_box{
+
+    height: 450px;
+    background-image: url("../img/dnd_sheet_BW.png");
+    background-color:#80A3C0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position-x: 300px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.text_container{
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  width: 350px;
+  padding-top: 25px;
+  padding-left: 15px;
+  margin-left: 25px;
+
+}
+
+.text_containerSP{
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    width: 350px;
+    padding-top: 25px;
+    padding-left: 15px;
+    margin-left: 25px;
+
+}
+
+.text_container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.sneakpeek{
+    /*container fot the information*/
+    background-color: #80A3C0;
+    height: 350px;
+    border-radius: 16px;/*rounds the corners*/
+    text-align: center;
+    justify-content: center;
+
+}
+.button{
+    display:inline-block;
+    text-align:center;
+    padding:5px 20px;
+    width: fit-content;
+    background-color: #024890;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFDF0;
+    border-radius: 16px;
+    transition: 0.6s ease;
+}
+
+.button:hover{
+
+  color: #024890;
+  background-color: #FFFDF0;
+  font-weight: bold;
+}
+
+.button_row{
+    display:flex;
+    flex-direction: row;
+
+}
+
+
+.hero_grid {
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 100% 40% ;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-areas:
+    "uxui_portfolio filler illustrative_work"
+    "lets_keep_in_touch filler want_to_collab"
+    "sneakpeek sneakpeek sneakpeek";
+  }
+
+
+  #uxui_portfolio {
+    grid-area: uxui_portfolio;
+    background-image: url("../img/ferst_readers_BW.png");
+    background-size: cover;
+    background-color:#80A3C0;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    border-radius: 10px;/*rounds the corners*/
+  }
+  #illustrative_work {
+    grid-area: illustrative_work;
+    background-color:#80A3C0;
+    background-image: url("../img/illustration_BW.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    margin-top: 15px;
+    border-radius: 10px;/*rounds the corners*/
+  }
+    #lets_keep_in_touch {
+    grid-area: lets_keep_in_touch;
+    background-color:#80A3C0 ;
+    margin-top: 15px;
+    border-radius: 10px;/*rounds the corners*/
+  }
+    #want_to_collab {
+    grid-area: want_to_collab;
+    background-color:#80A3C0;
+    margin-top: 15px;
+    border-radius: 10px;/*rounds the corners*/
+  }
+  .sneakpeek{
+      grid-area:sneakpeek;
+      background-image: url("../img/sneakpeak_BW.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 15px;
+      border-radius: 10px;/*rounds the corners*/
+
+  }
